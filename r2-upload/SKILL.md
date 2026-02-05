@@ -1,7 +1,7 @@
 ---
 name: r2-upload
 description: Upload files to Cloudflare R2, AWS S3, or any S3-compatible storage. Use when the user needs to upload files to cloud storage, generate public or presigned URLs, or integrate upload functionality into other skills.
-compatibility: Requires Python 3.8+ or Node.js 16+. Needs AWS4-HMAC-SHA256 signature support (no external SDK required).
+compatibility: Requires Python 3.8+. Needs AWS4-HMAC-SHA256 signature support (no external SDK required).
 metadata:
   author: foundra
   version: "2.0"
@@ -68,9 +68,7 @@ url = upload_file(
 | Script | Purpose | Example |
 |--------|---------|---------|
 | [scripts/r2-upload.py](scripts/r2-upload.py) | CLI upload tool | `python3 scripts/r2-upload.py file.jpg --public` |
-| [scripts/r2-upload.js](scripts/r2-upload.js) | Node.js CLI | `node scripts/r2-upload.js file.jpg --public` |
 | [scripts/upload.py](scripts/upload.py) | Python module for import | `from scripts.upload import upload_file` |
-| [scripts/upload.js](scripts/upload.js) | Node.js module for require | `require('./scripts/upload.js')` |
 
 ## Common patterns
 
